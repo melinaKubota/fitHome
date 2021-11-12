@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    max-width: 100vw;
+    overflow-x: hidden; /* esconde o que sobresai*/
+    overflow-y: scroll;
+}
+
+header{
+    display: flex;
+    width: 100%;
+}
+.verde{
+ color: #06ff28;
+}
+#assistaVideo{
+    padding: 1%;;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0, 0.3);
+}
+
+#assistaVideo p{  
+   margin: 5px;     
+   font-size: 1em; /* medida do browser */
+}
+#assistaVideo #pVermelho{
+    font-size: 1.5em; /* usar em em vonte */
+    color: red;
+}
+
+.video {
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+   
+   }
+   .video iframe, .video object, .video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+button{
+    background-color: #b6099e;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 1;
+    padding: 0 20px;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: 4px 4px 1px 0 #b40006#b6099e;
+    border: none;
+    animation: animacaoBotao 1s 1s ease-in-out ;
+}
+/* quando clica com o mouse */
+button:focus{
+    box-shadow: none;
+}
+
+.btnOferta{
+    margin:20px;
+    animation: animacaoBotao 1s 1s ease-in-out ;
+}
+/* buton */
+#acessoImediato{
+    margin: 0;
+}
+.acessoImediato {
+    background-color: #e0cf00;
+    color: black;
+    border: #e0cf00;
+    border-radius: 10px, ;
+    padding: 18px;
+    font-size: 0.8em;
+    margin: 18px 0;
+    box-shadow: 4px 4px 1px 0 #b3a709;
+
+}
+@keyframes animacaoBotao{
+    10%{
+        transform: rotate(-30deg);
+    }
+    20%{
+        transform: rotate(30deg);
+    }
+    35%{
+        transform: rotate(-30deg);
+    }
+    55%{
+        transform: rotate(30deg);
+    }
+    75%{
+        transform: rotate(-30deg);
+    }
+    
+}
+
+#banner{
+    width: 100%;
+}
+
+#imgResultado{
+    padding: 8%;
+}
+
+/* PROVA SOCIAL - BRANCO */
+#provaSocial{
+    grid-template-columns: 2;
+}
+.prova{
+    width: 25%;
+}
+/*SECOND PRETO  */
+#imgDiva{
+    display: inline;
+    width: 50%;
+    
+}
+#second{
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    align-items: center;
+}
+/*.textDiva{
+    padding: 0,70%;
+}
+.paragrafoUm{
+    margin: 5px;
+}
+
+.tituloFase{
+    color: red;
+}
+.barra{
+    color: red;
+} */
+
+/* como Funciona */
+#comoFunciona{  
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+
+}
+
+.imgTitulo{
+    width: 80%;
+    margin-top: 30px;
+}
+.oferta{
+    width: 70%;
+
+}
+/* sete dias - preto */
+#seteDias{
+    background-color: black; 
+}
+
+.seteDias{
+    max-width: 80vw;
+    padding-top: 30px;
+}
+
+/* faq */
+#faq{
+    background-color: #ededed;
+    padding-bottom: 30px;
+    
+}
+#h2faq{
+    margin: 0%;
+    font-size: 40px;
+}
+
+.arrow{
+    font-weight: 700;
+    line-height: 1;
+    margin: 0;
+    padding: 15px;
+    border-bottom: 1px;
+   /*  solid: #d4d4d4; */
+    cursor: pointer;
+    outline: none;
+    text-align: left;
+    text-decoration: none;
+}
+
+.arrow p{
+    font-family: "HANDOTRIAL", Sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    font-style: oblique;
+}
+
+/* @keyframes{
+    to{
+        visibility: hidden;
+    }
+} */ 
+
+.active{
+    display: block !important;
+}
+
+.rotate{
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.animation{
+    transition:300ms;
+}
+
+#tempo, #garantia, #acesso, #local p {
+    margin-top: 0;
+    margin-bottom: 0.9rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: #656565;
+    font-family: "HANDOTRIAL", Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: oblique;
+}
+#local p {
+    margin: 20px;
+}
+.escondido{
+    margin: 20px;
+}
+
+/* apresentação */
+#apresentacao{
+    padding: 0%;
+    background-color:white ;
+    color: black;   
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+#apresentacao p{
+    font-weight: bolder;
+    text-align: left; 
+    
+}
+
+.perfil{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    max-width: 95vw;
+    
+}
+.hosaka{
+    border: 2px solid red;
+    position: relative;  
+    width: 450px;
+    max-width: 80vw;
+    height: 450px;
+    max-height: 80vw;
+}
+#hosakaPerfil{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    width: 450px;
+    max-width: 80vw;
+    height: 450px;
+    max-height: 80vw;
+}
+.descricaoProfissional{
+    flex-grow: 1;
+    max-width: 80vw;
+    width: 600px;
+    margin-left: 20px;
+    height: 100%;
+    
+}
+.descricaoProfissional * { /* todos os filhos */
+    margin-top: 32px;
+}
+#termos{
+    color: black;
+    background-color:#ededed;
+    padding: 20px;
+    width: 100%;   
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#termos p{   
+    max-width: 85vw;
+    width: 1074px;
+    font-weight: 400;
+
+}
+
+
+@media screen and (max-width:480px){
+    #banner, img{
+      width: 100%; 
+    }
+    .funciona{
+        max-width: 95%;
+        width: 100vw;
+        margin: 2px;
+       
+    }
+
+   #imgDiva{
+    width: 100%;
+   }
+  
+}
+video{
+    max-width: 100vw;
+}
+.funciona img{
+    width: 95%;
+}
+
+/* APRESENTAÇÃO */
+
+
+footer{
+    background-color: #000000;
+    color: white;
+}
+
+   
